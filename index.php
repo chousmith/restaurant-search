@@ -10,7 +10,7 @@
 <head>
   <title>Tasty Restaurants in the Kearny Mesa area</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0">
   
   <meta propert="og:title" content="Tasty Restaurants in the Kearny Mesa area">
   <meta propert="og:description" content="https://github.com/chousmith/restaurant-search">
