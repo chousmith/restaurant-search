@@ -216,7 +216,7 @@
     // only run the filter js if there are some rows to filter initially
     if ( $('.noresults').size() == 0 ) {
       // add our filtering via js too now that we have php fallback
-      $('#filter').bind('keyup', function() {
+      $('#filter').on('input', function() {
         // remove prev empty
         $('.noresults').remove();
         // convert search filter term to all lowercase for case-insensitive
