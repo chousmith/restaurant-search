@@ -65,6 +65,9 @@
     .navbar-form {
       margin: 0
     }
+    .jumbotron {
+      margin-top: 20px;
+    }
   }
   @media (min-width: 768px) {
     .navbar-header {
@@ -75,6 +78,16 @@
     }
     .navbar-form .input-group {
       width: 100%;
+    }
+  }
+  @media (max-width: 479px) {
+    /* wrap .noresults a */
+    .noresults a {
+      display: block;
+    }
+    /* make the footer github url shorter on mobile */
+    .footer .g {
+      display: none;
     }
   }
   </style>
@@ -102,7 +115,7 @@
 
     <div class="jumbotron">
       <h1>Tasty Restaurants <small>in the Kearny Mesa area</small></h1>
-      <p>How tasty are they? Quite tasty indeed.</p>
+      <p>How tasty are they? Quite&nbsp;tasty indeed.</p>
     </div>
   
     <div class="row">
@@ -190,7 +203,10 @@
   
   <footer class="footer">
     <div class="container">
-      <p class="text-muted"><span class="pull-left">&copy; <?php echo date('Y'); ?> <a href="https://github.com/chousmith" target="_blank">alex chousmith</a></span> <span class="pull-right"><a href="https://github.com/chousmith/restaurant-search" target="_blank">github.com/chousmith/restaurant-search</a></span></p>
+      <p class="text-muted">
+        <span class="pull-left">&copy; <?php echo date('Y'); ?> <a href="https://github.com/chousmith" target="_blank">alex chousmith</a></span>
+        <span class="pull-right"><a href="https://github.com/chousmith/restaurant-search" target="_blank">github<span class="g">.com/chousmith/restaurant-search</span></a></span>
+      </p>
     </div>
   </footer>
   
